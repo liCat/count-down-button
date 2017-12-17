@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+## count-down-button
+> 一个倒计时按钮的 vue 组件
 
-You can use the [editor on GitHub](https://github.com/liCat/count-down-button/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+[github 地址](https://github.com/liCat/count-down-button)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[demo地址](https://licat.github.io/count-down-button/dist/example)
 
-### Markdown
+点击按钮后，会向父组件emit一个事件通知。按钮会进行倒计时，倒计时过程中不允许再次点击；倒计时完成后可以再次点击，依然遵循前面描述的逻辑。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### feature
 
-```markdown
-Syntax highlighted code block
+* 可以传入自定义初始文案和等待文案。
+* 可以传入倒计时时间,单位为秒。
+* 可以传入是否可用标记,如果不可用,则点击无效。
+* 可以根据是否可用以及是否已点击来判断按钮是否被禁用。
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/liCat/count-down-button/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
