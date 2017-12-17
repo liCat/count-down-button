@@ -5,6 +5,8 @@
 
 [demo地址](https://licat.github.io/count-down-button/example/index.html)
 
+[测试报告](https://licat.github.io/count-down-button/coverage/lcov-report/index.html)
+
 点击按钮后，会向父组件emit一个事件通知。按钮会进行倒计时，倒计时过程中不允许再次点击；倒计时完成后可以再次点击，依然遵循前面描述的逻辑。
 
 ### feature

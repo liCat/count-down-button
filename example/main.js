@@ -2,8 +2,8 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import CountDownButton from '../src'
-// import CountDownButton from '../dist/lib'
+// import CountDownButton from '../src'
+import CountDownButton from '../dist'
 Vue.config.productionTip = false
 
 Vue.use(CountDownButton)

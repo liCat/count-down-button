@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>count-down-button</title>
+  <meta charset="UTF-8">
+  <title>count-down-button</title>
+  <style>
+    h1 {
+      text-align: center;
+      line-height: 3;
+    }
+    .wrap {
+      width: 120px;
+      margin: auto
+    }
+    p {
+      line-height: 2;
+      color: #46b986;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      transition: all 0.5s;
+    }
+    p+p{
+      border-top: solid 1px #46b986;
+    }
+    p:hover{
+      background-color: #eee;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-<a href="/count-down-button/example/index.html">demo</a>
-<a href="/count-down-button/coverage/lcov-report/index.html">test coverage</a>
+<h1>count-down-button</h1>
+<div class="wrap">
+  <p><a href="/count-down-button/example/index.html">示例</a></p>
+  <p><a href="/count-down-button/coverage/lcov-report/index.html">测试报告</a></p>
+</div>
 </body>
 </html>

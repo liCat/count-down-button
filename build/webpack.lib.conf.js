@@ -1,5 +1,6 @@
 var path = require('path')
 var utils = require('./utils')
+var webpack = require('webpack')
 var vueLoaderConfig = require('./vue-loader.conf')
 
 function resolve (dir) {
@@ -12,7 +13,7 @@ module.exports = {
   },
   output: {
     libraryTarget: "umd",
-    path: path.resolve(__dirname, '../dist/lib'),
+    path: path.resolve(__dirname, '../dist'),
     filename: '[name].js',
   },
   resolve: {
@@ -68,5 +69,13 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins:[
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      },
+      sourceMap: true
+    }),
+  ]
 }
