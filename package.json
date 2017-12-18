@@ -2,7 +2,7 @@
   "name": "count-down-button",
   "version": "1.0.0",
   "description": "A vue validate message button component",
-  "main": "./dist/lib",
+  "main": "./dist/index.js",
   "author": "keli <670550188@qq.com>",
   "private": true,
   "scripts": {
